@@ -1,0 +1,189 @@
+body{
+    background: #000;
+    font-family: cursive;
+    color: white;
+}
+/* for all a links */
+a{
+    color: unset;
+}
+/* header */
+.header-parent{
+    display: flex;
+    flex: row wrap;
+    justify-content: space-around;
+}
+.header-child{
+    width: 100px;
+    height: 50px;
+
+}
+.header-parent:hover{
+    background: white;
+    color: black;
+}
+
+/* logo near header */
+.parent-logo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    opacity: 0.45;
+    transition: 0.75s;
+}
+.parent-logo:hover{
+    opacity: 1;
+}
+
+/* slide-animation */
+
+main{
+    position: absolute;
+
+    width: 1800px;
+    height: 1500px;
+}
+.slider-frame{
+    overflow: hidden;
+    height: 300px;
+    width: 360px;
+    margin-left: 120px;
+    margin-top: 200px;
+}
+
+@-webkit-keyframes slide_animation{
+    0%{left:0px;}
+    10%{left:0px;}
+    20%{left:1200px;}
+    30%{left:120px;}
+    40%{left:2400px;}
+    50%{left:2400px;}
+    60%{left:1200px;}
+    70%{left:1200px;}
+    80%{left:0px;}
+    90%{left:0px;}
+    100%{left:0px;}
+}
+
+
+.slide-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    background-size: cover;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+/* slide-animation-2 */
+.slider-frame-2{
+    overflow: hidden;
+    height: 300px;
+    width: 360px;
+    margin-right: 120px;
+    margin-top: 200px;
+}
+
+@-webkit-keyframes slide_animation_2{
+    0%{right:0px;}
+    10%{right:0px;}
+    20%{right:1200px;}
+    30%{right:120px;}
+    40%{right:2400px;}
+    50%{right:2400px;}
+    60%{right:1200px;}
+    70%{right:1200px;}
+    80%{right:0px;}
+    90%{right:0px;}
+    100%{right:0px;}
+}
+
+
+.slide-images-2{
+    width: 3600px;
+    height: 800px;
+    margin: 0 -2400px 0 0;
+    position: relative;
+    -webkit-animation-name: slide_animation_2;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    background-size: cover;
+}
+
+.img-container-2{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: right;
+}
+/* main-h1 */
+.h1-main{
+    text-align: center;
+}
+
+/* main-p */
+/* first line of pyramid */
+.p-parent{
+    display: flex;
+    /* flex-flow: row nowrap; */
+    justify-content: center;
+    align-items: flex-start;
+}
+.p-child{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    line-height: 25px;
+    opacity: 0.5;
+    transition:  1s;
+}
+
+.p-parent > .p-child:hover{
+    opacity: 1;
+}
+
+/* second line of pyramid */
+.p-parent-2{
+    display: flex;
+    justify-content: center;
+}
+.p-child-2{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    line-height: 25px;
+    opacity: 0.5;
+    transition: 1s;
+}
+.p-parent-2 > .p-child-2:hover{
+    opacity: 1;
+}
+
+/* last line of pyramid */
+.p-parent-3{
+    display: flex;
+    justify-content: center;
+}
+.p-child-3{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    line-height: 25px;
+    opacity: 0.5;
+    transition: 1s;
+}
+.p-parent-3 > .p-child-3:hover{
+    opacity: 1;
+}
