@@ -1,0 +1,57 @@
+body{
+    background: #000;
+    font-family: cursive;
+    color: white;
+}
+/* for all a links */
+a{
+    color: unset;
+}
+/* header */
+.header-logo{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+
+}
+.header-parent{
+    display: flex;
+    flex: row wrap;
+    justify-content: space-around;
+}
+.header-child{
+    width: 100px;
+    height: 50px;
+    font-size: large;
+}
+/* main */
+.h2-main{
+    text-align: center;
+}
+.main-parent{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.main-img{
+    margin-top: 3%;
+}
+
+ .p-animation{
+    margin: 25px;
+    width: 600px;
+    height: 200px;
+    line-height: 40px;
+}
+
+.main-2-img-parent{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.p-animation-2{
+    margin: 0 26px 26px 26px;
+    width: 750px;
+    height: 200px;
+    line-height: 40px;
+}
